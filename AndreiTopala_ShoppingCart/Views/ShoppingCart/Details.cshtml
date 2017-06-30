@@ -1,0 +1,32 @@
+﻿@model AndreiTopala_ShoppingCart.ViewModels.ItemViewModel
+
+@{
+    ViewBag.Title = "Item Details";
+}
+
+<h2>Item Details</h2>
+
+<div>
+    <h4>@Html.DisplayFor(model => model.name)</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.price)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to Cart", "Index")
+</p>
